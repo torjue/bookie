@@ -1,6 +1,6 @@
 var Subsumer = require('subsumer');
 var ko = require('knockout');
-	
+
 module.exports = function(){
 
 	var kernel = new Subsumer();
@@ -57,7 +57,9 @@ module.exports = function(){
 
 	return {
 		registerServices: registerServices,
+		registerService: registerService,
 		registerModules: registerModules,
+		registerModule: registerModule,
 		resolveAndBindModules: resolveAndBindModules,
 		container: kernel
 	};
